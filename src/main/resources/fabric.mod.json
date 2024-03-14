@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "fishing-time",
+	"version": "1.0.0",
+	"name": "FishingTime",
+	"description": "Adjust fishing times.",
+	"authors": [
+		"Kim-Lan"
+	],
+	"contact": {
+		"homepage": "https://github.com/Kim-Lan",
+		"sources": "https://github.com/Kim-Lan/fishing-time"
+	},
+	"license": "MIT",
+	"icon": "assets/fishing-time/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.kimlan.fishingtime.FishingTime"
+		]
+	},
+	"mixins": [
+		"fishing-time.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
