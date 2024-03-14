@@ -59,7 +59,7 @@ abstract class FishingBobberEntityMixin {
     private void modifyLureLevelFactor(CallbackInfo ci) {
          this.waitCountdown -= Math.max((int) 0, this.lureLevel * CONFIG.lureLevelFactor());
          this.waitCountdown = Math.max((int) 1, this.waitCountdown);
-         LOGGER.info("wait countdown: " + this.waitCountdown);
+         //LOGGER.info("wait countdown: " + this.waitCountdown);
          ci.cancel();
     }
 }
